@@ -15,12 +15,16 @@ for(let i = 0; i < allowedEmails.length; i++) {
     }
 }
 
+let validationEmail = document.getElementById('message')
+
 // SE LA MAIL RIENTRA NEI PARAMETRI, LA CONSOLE STAMPA 'EMAIL VALIDA'
 if(isValid) {
+    validationEmail.innerText = 'La tua email è valida';
     console.log('La tua email è valida');
 } 
 // SE LA MAIL NON RIENTRA NEI PARAMETRI, LA CONSOLE STAMPA 'EMAIL NON VALIDA'
 else {
+    validationEmail.innerText = 'La tua email non è valida';
     console.log('La tua email non è valida');
 }
 
