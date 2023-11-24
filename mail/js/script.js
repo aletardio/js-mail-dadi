@@ -11,14 +11,13 @@ let isValid = false;
 for(let i = 0; i < allowedEmails.length; i++) {
     if(userEmail === allowedEmails[i]) {
         isValid = true;
-        break;
     }
 }
 
 let validationEmail = document.getElementById('message')
 
 // SE LA MAIL RIENTRA NEI PARAMETRI, LA CONSOLE STAMPA 'EMAIL VALIDA'
-if(isValid) {
+if(isValid == true) {
     validationEmail.innerText = 'La tua email è valida';
     console.log('La tua email è valida');
 } 
